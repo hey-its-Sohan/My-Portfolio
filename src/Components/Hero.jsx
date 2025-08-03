@@ -14,9 +14,9 @@ const Hero = () => {
           </div>
           <div>
             <h1 className="text-4xl font-bold">MD. Mahmudul Islam Sohan</h1>
-            <h3 className="text-xl text-gray-600 my-3">CSE @ BRAC University</h3>
+            <h3 className="text-xl text-gray-600 my-3">MERN Stack Developer</h3>
             <p className="text-gray-700">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione in natus autem <br /> odio iusto earum obcaecati maiores adipisci fuga est.
+              I’m a MERN Stack developer with a passion for building clean, <br /> responsive, and scalable web apps.
             </p>
           </div>
         </div>
