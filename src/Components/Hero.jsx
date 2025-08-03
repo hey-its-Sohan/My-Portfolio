@@ -4,9 +4,11 @@ import profile from '../assets/profile.jpg';
 
 const Hero = () => {
   return (
-    <div className='max-w-screen-xl mx-auto px-6 lg:px-20 my-20'>
+    <div id='home' className='max-w-screen-xl scroll-mt-24 mx-auto px-6 lg:px-20 my-20 mt-40'>
       <div className=" flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
-        <div className="flex gap-10 items-center">
+        <div className="flex gap-10 items-center"
+          data-aos="fade-right" data-aos-duration="900" data-aos-delay="200"
+        >
           <div className="flex flex-col gap-5 text-2xl text-primary">
             <Linkedin />
             <Github />
@@ -24,6 +26,7 @@ const Hero = () => {
         <div>
           <div
             className="w-[300px] h-[300px] bg-center bg-cover relative "
+            data-aos="fade-left" data-aos-duration="900" data-aos-delay="200"
             style={{
               backgroundImage: `url(${profile})`,
               animation: "profileAnim 8s ease-in-out infinite",

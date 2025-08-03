@@ -1,3 +1,5 @@
+import About from "./Components/About";
+import Contact from "./Components/Contact";
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
 import Projects from "./Components/Projects";
@@ -28,12 +30,16 @@ function App() {
         />
 
         {/* Your Content/Components with z-10 */}
-        <div className="relative z-10">
+        <div className="relative z-10 scroll-smooth">
           <Header />
-          <Hero />
-          <Skills />
-          <Qualification />
-          <Projects />
+          <div className="">
+            <Hero />
+            <About />
+            <Skills />
+            <Qualification />
+            <Projects />
+            <Contact />
+          </div>
         </div>
       </div>
     </>

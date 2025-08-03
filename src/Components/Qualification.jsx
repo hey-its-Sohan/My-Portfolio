@@ -45,7 +45,7 @@ const Qualification = () => {
   const currentTimeline = activeTab === 'education' ? education : experience;
 
   return (
-    <div className="max-w-screen-xl mx-auto px-5 py-16">
+    <div id='qualification' className="max-w-screen-xl scroll-mt-14 mx-auto px-5 py-16">
       <h2 className="text-3xl font-bold text-center">Qualification</h2>
       <p className="text-center text-gray-500 mt-2">Select between Education and Experience ↓</p>
 
