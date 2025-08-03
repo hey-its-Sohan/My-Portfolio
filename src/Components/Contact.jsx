@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div id="contact" className="max-w-screen-xl mx-auto scroll-mt-14 px-5 py-16">
+    <div id="contact" className="max-w-screen-xl mx-auto scroll-mt-14 px-5 lg:px-20 py-16">
       <h2 className="text-3xl font-bold text-center mb-6">Let's Talk</h2>
       <p className="text-center text-gray-600 mb-10">
         Have a project in mind, a question, or just want to connect? Feel free to reach out!

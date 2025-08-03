@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const Header = () => {
-  const [active, setActive] = useState('home');
+  const [active, setActive] = useState('');
 
   return (
     <div className='bg-white/30 mb-10 shadow-sm fixed backdrop-blur-md top-0 left-0 w-full z-50'>
-      <div className='max-w-screen-xl mx-auto px-6 lg:px-20'>
+      <div className='max-w-screen-xl mx-auto lg:px-20'>
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
@@ -15,11 +15,24 @@ const Header = () => {
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a>Home</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a>Skills</a></li>
-                <li><a>Qualification</a></li>
-                <li><a>Projects</a></li>
+                <li onClick={() => setActive('home')} className={` text-lg ${active === 'home' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#home">Home</a>
+                </li>
+                <li onClick={() => setActive('about')} className={`text-lg ${active === 'about' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#about">About</a>
+                </li>
+                <li onClick={() => setActive('skills')} className={`text-lg ${active === 'skills' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#skills">Skills</a>
+                </li>
+                <li onClick={() => setActive('qualification')} className={`text-lg ${active === 'qualification' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#qualification">Qualification</a>
+                </li>
+                <li onClick={() => setActive('projects')} className={`text-lg ${active === 'projects' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#projects">Projects</a>
+                </li>
+                <li onClick={() => setActive('contact')} className={`text-lg ${active === 'contact' ? 'border-b font-medium border-primary' : ''}`}>
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </div>
             <a className="btn btn-ghost text-xl">Sohan</a>

@@ -7,17 +7,17 @@ const Hero = () => {
     <div id='home' className='max-w-screen-xl scroll-mt-24 mx-auto px-6 lg:px-20 my-20 mt-40'>
       <div className=" flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
         <div className="flex gap-10 items-center"
-          data-aos="fade-right" data-aos-duration="900" data-aos-delay="200"
+
         >
-          <div className="flex flex-col gap-5 text-2xl text-primary">
+          <div className="flex flex-col gap-5 text-2xl text-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <Linkedin />
             <Github />
             <Instagram />
           </div>
           <div>
-            <h1 className="text-4xl font-bold">MD. Mahmudul Islam Sohan</h1>
-            <h3 className="text-xl text-gray-600 my-3">MERN Stack Developer</h3>
-            <p className="text-gray-700">
+            <h1 className="text-4xl font-bold" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">MD. Mahmudul Islam Sohan</h1>
+            <h3 className="text-xl text-gray-600 my-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">MERN Stack Developer</h3>
+            <p className="text-gray-700" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               I’m a MERN Stack developer with a passion for building clean, <br /> responsive, and scalable web apps.
             </p>
           </div>
@@ -26,7 +26,7 @@ const Hero = () => {
         <div>
           <div
             className="w-[300px] h-[300px] bg-center bg-cover relative "
-            data-aos="fade-left" data-aos-duration="900" data-aos-delay="200"
+            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
             style={{
               backgroundImage: `url(${profile})`,
               animation: "profileAnim 8s ease-in-out infinite",
