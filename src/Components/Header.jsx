@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import nameLogo2 from '../assets/nameLogo2.png'
 
 const Header = () => {
   const [active, setActive] = useState('');
@@ -35,7 +36,9 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">Sohan</a>
+
+            <a href="#"><img src={nameLogo2} alt="nameLogo" className='w-24  md:w-28' /></a>
+
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

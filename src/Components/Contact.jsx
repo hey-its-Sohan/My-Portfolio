@@ -37,7 +37,7 @@ const Contact = () => {
 
 
       {/* Contact Info */}
-      <div className="grid sm:grid-cols-3 text-center mb-16 gap-6 md:px-14">
+      <div className="grid sm:grid-cols-3 text-center mb-16 gap-6 md:px-18">
         <div className="flex flex-col items-center text-gray-700">
           <Mail className="w-7 h-7 mb-2 text-primary" />
           <p className="font-medium">its.sohan.dev@gmail.com</p>

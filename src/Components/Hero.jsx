@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpg';
 
 const Hero = () => {
   return (
-    <div id='home' className='max-w-screen-xl scroll-mt-24 mx-auto px-6 lg:px-20 my-20 mt-40'>
+    <div id='home' className='max-w-screen-xl scroll-mt-24 mx-auto px-6 lg:px-20 my-36 lg:my-48'>
       <div className=" flex flex-col-reverse md:flex-row items-center justify-between gap-10 ">
         <div className="flex gap-10 items-center"
 
@@ -20,6 +20,7 @@ const Hero = () => {
             <p className="text-gray-700" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               I’m a MERN Stack developer with a passion for building clean, <br /> responsive, and scalable web apps.
             </p>
+            <a href="#projects" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"><button className='btn btn-primary text-lg mt-3'>Projects</button></a>
           </div>
         </div>
 
