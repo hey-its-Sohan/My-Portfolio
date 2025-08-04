@@ -1,5 +1,6 @@
 import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import React, { useState } from 'react';
+import { FaCalendarAlt } from "react-icons/fa";
 
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState('education');
@@ -29,18 +30,31 @@ const Qualification = () => {
 
   const experience = [
     {
-      title: 'Frontend Intern',
-      place: 'TechSoft Ltd.',
-      year: 'June 2024 - Aug 2024',
-      desc: 'Worked on developing UI components using React and TailwindCSS.',
+      title: 'Full-Stack Personal Project',
+      place: 'RedDrop – Blood Donation Platform',
+      year: '2025',
+      desc: 'Developed a full-featured blood donation platform with user role management, real-time donation requests, admin dashboard, and Stripe integration for funding. Built using the MERN stack and Firebase.',
     },
     {
-      title: 'Open Source Contributor',
-      place: 'GitHub Projects',
-      year: '2023 - Present',
-      desc: 'Contributed to various open source projects focused on web development.',
+      title: 'Full-Stack Personal Project',
+      place: 'Rent Buddy',
+      year: '2025',
+      desc: 'Created a roommate and rental finder app with location-based features and profile matching, optimized for mobile users. Implemented frontend using React, Tailwind, and Firebase.',
+    },
+    {
+      title: 'Full-Stack Personal Project',
+      place: 'ShareBite',
+      year: '2025',
+      desc: 'Built a community-driven food sharing platform to connect donors with nearby recipients and reduce food waste. Focused on backend API integration and MongoDB data modeling.',
+    },
+    {
+      title: 'Frontend Mini Project',
+      place: 'UtiPay BD',
+      year: '2025',
+      desc: 'Designed a modern UI for a utility bill payment app with secure Firebase authentication. Focused on responsive design and clean UX.',
     },
   ];
+
 
   const currentTimeline = activeTab === 'education' ? education : experience;
 
@@ -89,10 +103,16 @@ const Qualification = () => {
             <div className={`mb-10 mx-3 ${index % 2 === 0 ? 'timeline-start md:text-end' : 'timeline-end'}`}
               data-aos={index % 2 === 0 ? 'fade-up-right' : 'fade-up-left'}
               data-aos-delay={index * 100}>
-              <time className="font-mono italic text-sm text-gray-500">{item.year}</time>
+
               <div className="text-lg font-bold">{item.title}</div>
-              <div className="text-sm text-gray-600 font-medium">{item.place}</div>
+              <div className="  font-medium">{item.place}</div>
               <p className="text-sm text-gray-500 mt-1">{item.desc}</p>
+              <div className="mt-2 inline-flex items-center gap-2 text-gray-500">
+                <FaCalendarAlt className="text-sm font-mono italic" />
+                <time className="font-mono italic text-sm">{item.year}</time>
+              </div>
+
+
             </div>
             <hr />
           </li>

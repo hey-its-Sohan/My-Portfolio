@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Github, Linkedin } from 'lucide-react';
 import React from 'react';
 import profile from '../assets/profile.jpg';
 
@@ -10,9 +10,9 @@ const Hero = () => {
 
         >
           <div className="flex flex-col gap-5 text-2xl text-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-            <Linkedin />
-            <Github />
-            <Instagram />
+            <a href="https://github.com/hey-its-Sohan" ><Github size={28} /></a>
+            <a href="https://www.linkedin.com/in/mahmudul-islam-sohan/" ><Linkedin size={28} /></a>
+            <a href="https://www.facebook.com/mahmudul.islam.sohan.2025/" ><Facebook size={28} /></a>
           </div>
           <div>
             <h1 className="text-4xl font-bold" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">MD. Mahmudul Islam Sohan</h1>

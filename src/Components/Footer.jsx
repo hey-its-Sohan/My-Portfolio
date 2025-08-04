@@ -1,16 +1,28 @@
-import { Copyright } from 'lucide-react';
 import React from 'react';
+import { Copyright } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <div className='bg-sky-200/20 mt-10'>
-      <div className='max-w-screen-xl mx-auto px-5 py-5'>
-        <div className="flex w-full flex-col">
-          <div className="divider text-gray-500 font-medium"><Copyright className='w-14 h-7 text-gray-400' />2025 - Sohan</div>
-          <h3 className='text-xl font-medium text-center'>Developed and designed with love ❤️</h3>
+    <footer className='bg-sky-100 mt-16 border-t border-gray-200'>
+      <div className='max-w-screen-xl mx-auto px-4 py-8 flex flex-col items-center text-center space-y-2'>
+        <div className='flex items-center text-gray-500 text-sm'>
+          <Copyright className='w-4 h-4 mr-1' />
+          <span>2025 - Sohan. All rights reserved.</span>
         </div>
+        <p className='text-gray-700 text-sm'>
+          Developed and designed with{' '}
+          <span role="img" aria-label="love" className="text-red-500">❤️</span> by{' '}
+          <a
+            href="https://your-portfolio-link.com"
+            className="text-primary font-medium hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mahmudul Islam Sohan
+          </a>
+        </p>
       </div>
-    </div>
+    </footer>
   );
 };
 
