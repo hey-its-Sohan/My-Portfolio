@@ -1,12 +1,48 @@
-# React + Vite
+<!-- Banner -->
+<p align="center">
+  <img src="https://your-portfolio-banner-url.com" alt="Portfolio Banner" width="100%">
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">🌐 Mahmudul Islam Sohan — Developer Portfolio</h1>
+<h3 align="center">Showcasing My Skills, Projects, and Professional Journey</h3>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 **[View Portfolio](https://mahmudul-islam-sohan.netlify.app)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📜 About This Portfolio
+
+This is my **personal developer portfolio** designed to highlight my skills, showcase my best projects, and provide an easy way for recruiters, clients, and collaborators to connect with me.
+
+The portfolio is fully responsive, fast, and built with modern technologies to ensure a great user experience across devices.
+
+---
+
+## ✨ Features
+
+- 🖥 **Responsive Design** — Works smoothly on mobile, tablet, and desktop  
+- 📂 **Projects Showcase** — Highlighting my top personal and collaborative work  
+- 📝 **About Me Section** — Professional background & career goals  
+- 📧 **Contact Form** — Direct messaging to my email inbox  
+- 🎨 **Modern UI/UX** — Clean, minimal, and engaging layout  
+- 🌐 **SEO Optimized** — Better discoverability on search engines  
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend:
+![React](https://img.shields.io/badge/React-%2361DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2306B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+
+### Others:
+![Netlify](https://img.shields.io/badge/Netlify-%2300C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+---
+
+
