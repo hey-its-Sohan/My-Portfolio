@@ -7,6 +7,34 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { ToastContainer } from 'react-toastify'
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router";
+import ProjectDetails from './Components/ProjectDetails.jsx'
+import Home from './Pages/Home.jsx'
+
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: App,
+    errorElement: <div>This is error</div>,
+
+    children: [
+
+      {
+        path: "/",
+        Component: Home,
+      },
+      {
+        path: "/project-details/:id",
+        Component: ProjectDetails,
+      },
+    ]
+  },
+]);
+
 AOS.init({
   duration: 1000,
   once: true,
@@ -14,7 +42,7 @@ AOS.init({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
     <ToastContainer />
   </StrictMode>,
 )

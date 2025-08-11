@@ -1,11 +1,7 @@
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header"
-import Hero from "./Components/Hero"
-import Projects from "./Components/Projects";
-import Qualification from "./Components/Qualification";
-import Skills from "./Components/Skills";
+import { Outlet } from "react-router";
+
+
+
 
 
 function App() {
@@ -32,14 +28,8 @@ function App() {
 
         {/* Your Content/Components with z-10 */}
         <div className="relative z-10 scroll-smooth">
-          <Header />
-          <Hero />
-          <About />
-          <Skills />
-          <Qualification />
-          <Projects />
-          <Contact />
-          <Footer />
+
+          <Outlet />
         </div>
       </div>
     </>

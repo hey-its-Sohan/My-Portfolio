@@ -1,49 +1,10 @@
 import React from 'react';
-import redDropImg from '../assets/RedDrop.png';
-import rentBuddyImg from '../assets/RentBuddy.png';
-import shareBiteImg from '../assets/ShareBite.png';
-import utiPayImg from '../assets/UtiPay.png';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { Link } from 'react-router';
+import projects from '../Data/Projects'
 
 const Projects = () => {
-  const projects = [
-    {
-      name: 'RedDrop',
-      image: redDropImg,
-      des: 'A full-featured blood donation platform with user roles, dashboards, Stripe integration for funding, and real-time donation request management.',
 
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Firebase', 'Stripe', 'Tailwind'],
-      github: '',
-      liveLink: 'https://red-drop-web.netlify.app/',
-    },
-    {
-      name: 'Rent Buddy',
-      image: rentBuddyImg,
-      des: 'A roommate and rental finder app built for students and young professionals, featuring user profiles and location-based matching.',
-
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Firebase', 'Tailwind'],
-      github: '',
-      liveLink: 'https://rent-buddy-web.netlify.app/',
-    },
-    {
-      name: 'ShareBite',
-      image: shareBiteImg,
-      des: 'A community food-sharing platform designed to reduce food waste by connecting donors with nearby recipients.',
-
-      tech: ['React.js', 'Node.js', 'Express.js', 'Axios', 'MongoDB', 'Tailwind', 'Vercel'],
-      github: '',
-      liveLink: 'https://share-bite-web.netlify.app/',
-    },
-    {
-      name: 'UtiPay BD',
-      image: utiPayImg,
-      des: 'A secure and efficient web app to manage and pay utility bills online.',
-
-      tech: ['React.js', 'Firebase Auth', 'Tailwind'],
-      github: '',
-      liveLink: 'https://utipay-bd.netlify.app/',
-    },
-  ];
 
   return (
     <div id='projects' className="max-w-screen-xl scroll-mt-14 mx-auto px-5 py-10">
@@ -56,7 +17,7 @@ const Projects = () => {
             data-aos="fade-up"
             data-aos-delay={index * 150}
             data-aos-duration="600"
-            className="card bg-white shadow-md w-96 hover:shadow-xl transition duration-300">
+            className="card bg-white shadow-md w-[350px] lg:w-96 hover:shadow-xl transition duration-300">
             <figure >
               <img src={project.image} alt={project.name} className='h-48' />
             </figure>
@@ -68,11 +29,12 @@ const Projects = () => {
                   <span key={i} className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">{tech}</span>
                 ))}
               </div>
-              <div className="card-actions mt-4 justify-end">
 
-                <a href={project.liveLink || '#'} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-primary btn-sm">
+              <div className="card-actions mt-4 justify-between">
+                <Link to={`/project-details/${project.id}`} state={project}><button className='btn btn-primary btn-sm text-white'>View Details</button></Link>
+                <Link href={project.liveLink || '#'} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-primary btn-sm">
                   <FaExternalLinkAlt /> Live
-                </a>
+                </Link>
               </div>
             </div>
           </div>

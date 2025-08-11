@@ -1,5 +1,5 @@
 import React from 'react';
-import { Copyright } from 'lucide-react';
+import { Copyright, Facebook, Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,11 +9,16 @@ const Footer = () => {
           <Copyright className='w-4 h-4 mr-1' />
           <span>2025 - Sohan. All rights reserved.</span>
         </div>
+        <div className='flex gap-3 my-2 '>
+          <a className='hover:text-primary' href="https://github.com/hey-its-Sohan" ><Github size={24} /></a>
+          <a className='hover:text-primary' href="https://www.linkedin.com/in/mahmudul-islam-sohan/" ><Linkedin size={24} /></a>
+          <a className='hover:text-primary' href="https://www.facebook.com/mahmudul.islam.sohan.2025/" ><Facebook size={24} /></a>
+        </div>
         <p className='text-gray-700 text-sm'>
           Developed and designed with{' '}
           <span role="img" aria-label="love" className="text-red-500">❤️</span> by{' '}
           <a
-            href="https://your-portfolio-link.com"
+            href="https://mahmudul-islam-sohan.netlify.app/"
             className="text-primary font-medium hover:underline"
             target="_blank"
             rel="noopener noreferrer"

@@ -38,13 +38,20 @@ const Contact = () => {
 
       {/* Contact Info */}
       <div className="grid sm:grid-cols-3 text-center mb-16 gap-6 md:px-18">
-        <div className="flex flex-col items-center text-gray-700">
+        <div
+          onClick={() =>
+            window.open(
+              'https://mail.google.com/mail/?view=cm&fs=1&to=its.sohan.dev@gmail.com',
+              '_blank'
+            )
+          }
+          className="flex flex-col cursor-pointer hover:text-primary items-center text-gray-700">
           <Mail className="w-7 h-7 mb-2 text-primary" />
           <p className="font-medium">its.sohan.dev@gmail.com</p>
         </div>
         <div className="flex flex-col items-center text-gray-700">
           <Phone className="w-7 h-7 mb-2 text-primary" />
-          <p className="font-medium">+880 1XXX-XXXXXX</p>
+          <p className="font-medium">+880 1863-918621</p>
         </div>
         <div className="flex flex-col items-center text-gray-700">
           <MapPin className="w-7 h-7 mb-2 text-primary" />

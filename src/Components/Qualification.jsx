@@ -114,7 +114,7 @@ const Qualification = () => {
 
 
             </div>
-            <hr />
+            <hr className=' bg-gray-300' />
           </li>
         ))}
       </ul>

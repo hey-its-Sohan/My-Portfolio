@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import nameLogo2 from '../assets/nameLogo2.png'
+import nameLogo3 from '../assets/nameLogo3.png'
 
 const Header = () => {
   const [active, setActive] = useState('');
@@ -37,7 +37,7 @@ const Header = () => {
               </ul>
             </div>
 
-            <a href="#"><img src={nameLogo2} alt="nameLogo" className='w-24  md:w-28' /></a>
+            <a href="#"><img src={nameLogo3} alt="nameLogo" className='w-24  md:w-28' /></a>
 
           </div>
           <div className="navbar-end hidden lg:flex">

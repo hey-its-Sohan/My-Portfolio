@@ -1,6 +1,6 @@
 import { Facebook, Github, Linkedin } from 'lucide-react';
 import React from 'react';
-import profile from '../assets/profile.jpg';
+import profile from '../assets/profile.webp';
 
 const Hero = () => {
   return (
