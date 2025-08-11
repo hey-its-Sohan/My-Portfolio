@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://your-portfolio-banner-url.com" alt="Portfolio Banner" width="100%">
+  <img src="https://res.cloudinary.com/dpwjurgeu/image/upload/v1754932268/5cd78b62-92ea-4119-8f8a-f7f42dd20f15.png" alt="Portfolio Banner" width="100%">
 </p>
 
 <h1 align="center">🌐 Mahmudul Islam Sohan — Developer Portfolio</h1>
