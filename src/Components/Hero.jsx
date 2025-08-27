@@ -1,4 +1,4 @@
-import { Facebook, Github, Linkedin } from 'lucide-react';
+import { Download, Facebook, Github, Linkedin } from 'lucide-react';
 import React from 'react';
 import profile from '../assets/profile.webp';
 
@@ -20,7 +20,11 @@ const Hero = () => {
             <p className="text-gray-700" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
               I’m a MERN Stack developer with a passion for building clean, <br /> responsive, and scalable web apps.
             </p>
-            <a href="#projects" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"><button className='btn btn-primary text-lg mt-3'>Projects</button></a>
+            <div className='flex gap-3 items-center mt-2'>
+              <a href="/Mahmudul_Islam_Sohan_Resume.pdf"
+                download="Mahmudul_Islam_Sohan_Resume.pdf" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"><button className='btn btn-primary text-lg mt-3'><Download className='w-5 h-5' /> Resume</button></a>
+              <a href="#projects" data-aos="fade-up" data-aos-duration="900" data-aos-delay="500"><button className='btn btn-primary btn-outline text-lg mt-3'>Projects</button></a>
+            </div>
           </div>
         </div>
 

@@ -37,7 +37,7 @@ const Contact = () => {
 
 
       {/* Contact Info */}
-      <div className="grid sm:grid-cols-3 text-center mb-16 gap-6 md:px-18">
+      <div className="grid sm:grid-cols-3 text-center mb-16 gap-6">
         <div
           onClick={() =>
             window.open(
@@ -63,7 +63,7 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto space-y-6 border border-gray-200"
+        className="bg-white p-8 rounded-xl shadow-lg space-y-6 border border-gray-200"
       >
         <input type="hidden" name="date" value={new Date().toLocaleString()} />
 

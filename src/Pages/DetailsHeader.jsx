@@ -18,7 +18,7 @@ const DetailsHeader = () => {
             <div>
               <h3
                 onClick={() => navigate(-1)}
-                className=" text-xl cursor-pointer hover:drop-shadow hover:text-primary flex items-center gap-2"
+                className=" lg:text-xl cursor-pointer hover:drop-shadow hover:text-primary flex items-center gap-2"
               >
                 <ArrowLeft size={18} /> Back to Projects
               </h3>

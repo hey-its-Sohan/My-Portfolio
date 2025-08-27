@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div className='bg-white/30 mb-10 shadow-sm fixed backdrop-blur-md top-0 left-0 w-full z-50'>
-      <div className='max-w-screen-xl mx-auto lg:px-20'>
+      <div className='max-w-screen-xl mx-auto lg:px-16'>
         <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">

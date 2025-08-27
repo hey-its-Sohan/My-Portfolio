@@ -78,7 +78,7 @@ const projects = [
       'Provide cashback and offers for regular users'
     ],
     tech: ['React.js', 'Firebase', 'Tailwind'],
-    github: '',
+    github: 'https://github.com/hey-its-Sohan/utipay-bd',
     liveLink: 'https://utipay-bd.netlify.app/',
   },
 ];
